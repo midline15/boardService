@@ -14,6 +14,10 @@
                     <div sec:authorize="isAnonymous()">
                         <a class="btn btn-outline-light me-2" href="/user/login">Login</a>
                         <a class="btn btn-outline-light me-2" href="/user/signup">Signup</a>
+                        <a href="/oauth2/authorization/kakao"><img height="38px" src="/image/kakao_login_medium_narrow.png"></a>
+                        <a href="/oauth2/authorization/google"><img src="/image/btn_google_signin_dark_normal_web.png"
+                                                                    height="38px"></a>
+                        <a href="/oauth2/authorization/naver"><img src="/image/btnG_naver.png" height="38px"></a>
                     </div>
                     <div sec:authorize="isAuthenticated()">
                         <a th:if="${#strings.equals(#authentication.principal.user.oauth,'WOORI')}"
