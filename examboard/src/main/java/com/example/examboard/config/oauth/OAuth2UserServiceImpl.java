@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 @Service
-public class OAuth2UserDetailsServiceImpl extends DefaultOAuth2UserService {
+public class OAuth2UserServiceImpl extends DefaultOAuth2UserService {
 
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
